@@ -1,0 +1,138 @@
+:root{
+    --dark1: #292c3c;
+    --dark2: #303446;
+    --dark3: #414559;
+    --dark4: #51576d;
+    --text1: #c6d0f5;
+    --pink1: #f2d5cf;
+}
+
+body{
+    background-color: var(--dark2);
+    color: var(--text1);
+    font-family: "Adwaita Sans", sans-serif;
+    margin: 0;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    color: var(--text1);
+}
+#two-columns .two-columns{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+#column-left {
+    float: left;
+    width: 20%;
+    background-color: var(--dark1);
+    flex-grow:1;
+}
+.even-columns{
+    float:left;
+    width:50%;
+}
+#column-right{
+     float: left;
+     width: 80%;
+ }
+#title{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+#title img{
+    width:30vh;
+    margin-top: 3rem;
+}
+#home-button div{
+    transition: background-color 0.5s, color 0.5s;
+}
+#home-button div:hover{
+    background-color: var(--dark3);
+    color: var(--pink1);
+}
+#home-button div h1{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Clear floats after the columns */
+#two-columns:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#navbar a{
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: var(--dark3);
+    color: var(--text1);
+    transition: background-color 1s, width 1s, color 1s;
+    transition-timing-function: ease;
+    width:60%;
+}
+#navbar a h2{
+    margin: 0;
+}
+#navbar a:hover{
+    background-color: var(--dark4);
+    width: 83%;
+    color: var(--pink1);
+}
+#navbar #selected{
+    background-color: var(--dark2);
+    width: 83%;
+}
+.entry{
+    margin:2rem;
+    width:auto;
+    padding:2rem;
+    background-color: var(--dark1);
+    border-radius: 1rem;
+}
+
+.entry:hover{
+    background-color: var(--dark3);
+}
+.entry div h2, .entry div h4{
+    margin:0;
+}
+.entry div h4{
+    margin-top: auto;
+    margin-right: 0.5rem;
+}
+.entry .entry-content{
+    margin-top: 1rem;
+}
+.display-rows{
+    display: flex;
+}
+.entry div img{
+    height:25vh;
+}
+.entry div p{
+    margin:2rem;
+}
+#contacts .display-rows p,#contacts .display-rows h3 {
+    margin: 1rem;
+}
+#contacts .display-rows img{
+    margin-top: auto;
+    margin-bottom: auto ;
+}
+.contact-icon{
+    width:2rem;
+    height:2rem;
+    margin-left:1rem;
+}
+#contacts a{
+    transition: color 0.5s;
+}
+#contacts a:hover{
+    color: var(--pink1);
+}
