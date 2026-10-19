@@ -18,6 +18,9 @@ a{
     text-decoration: none;
     color: var(--text1);
 }
+#navbar{
+    height: 100%;
+}
 #two-columns .two-columns{
     display: flex;
     flex-direction: row;
@@ -46,6 +49,7 @@ a{
 #title img{
     width:30vh;
     margin-top: 3rem;
+    border: 5px solid var(--dark2);
 }
 #home-button div{
     transition: background-color 0.5s, color 0.5s;
@@ -72,7 +76,7 @@ a{
     margin: 1rem;
     background-color: var(--dark3);
     color: var(--text1);
-    transition: background-color 1s, width 1s, color 1s;
+    transition: background-color 0.2s, width 0.2s, color 0.2s;
     transition-timing-function: ease;
     width:60%;
 }
@@ -113,7 +117,8 @@ a{
     display: flex;
 }
 .entry div img{
-    height:25vh;
+    max-height:30vh;
+    width: 15vw;
 }
 .entry div p{
     margin:2rem;
