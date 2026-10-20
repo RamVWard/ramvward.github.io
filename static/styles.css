@@ -52,7 +52,7 @@ a{
     border: 5px solid var(--dark2);
 }
 #home-button div{
-    transition: background-color 0.5s, color 0.5s;
+    transition: background-color 0.2s, color 0.2s;
 }
 #home-button div:hover{
     background-color: var(--dark3);
@@ -117,7 +117,6 @@ a{
     display: flex;
 }
 .entry div img{
-    max-height:30vh;
     width: 15vw;
 }
 .entry div p{
