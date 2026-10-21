@@ -30,6 +30,7 @@ a{
     width: 20%;
     background-color: var(--dark1);
     flex-grow:1;
+    height:100%
 }
 .even-columns{
     float:left;
